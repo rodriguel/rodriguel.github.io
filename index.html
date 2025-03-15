@@ -4,11 +4,14 @@
 <title>Webpage of R.L</title>
  <meta charset="UTF-8">
       <link rel="stylesheet" href="new.css"> 
+<<<<<<< HEAD
        <link rel="stylesheet" type="text/css" href='fonts.css' media="none" onload="if(media!='all')media='all'"/>
 
 	<script type=”text/javascript” src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
 	<link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
 	<link rel='stylesheet' href='style.css' type='text/css' media='all' />
+=======
+>>>>>>> 1c43877 (Changing files structure and adding animation to the website)
   </head>
   <body>
      <h1 id="webpage-of-r.l.">Webpage of R.L.</h1>
@@ -151,28 +154,135 @@
      </div>
      </div>
      <p> </p>
-     <h3 id="teaching">Teaching</h3>
+     <h3 id="teaching-material">Teaching material</h3>
      <p>I was a teaching assistant at Université Paris-Dauphine. Some
      personal material for the fourth-year course <a
      href="https://turinici.com/analyse-numerique-evolution-m1-math">Analyse
      numérique: évolution</a> of Gabriel Turinici are available, namely
-     a practical work (<a href="data/PW1.pdf">.pdf</a>, <a
-     href="data/PW1_notebook.ipynb">.ipynb</a>) on the numerical
-     integration of (stiff) ordinary differential equations. Although
-     the material is fairly standard, I did manage to find an example of
-     a differential equation <span
+     a practical work (<a href="data/teaching/PW1.pdf">.pdf</a>, <a
+     href="data/teaching/PW1_notebook.ipynb">.ipynb</a>) on the
+     numerical integration of (stiff) ordinary differential equations.
+     Although the material is fairly standard, I did manage to find an
+     example of a differential equation <span
      class="math inline"><em>y</em>′ = <em>f</em>(<em>t</em>, <em>y</em>)</span>
      for a <em>non-Lipschitz</em> dynamics <span
      class="math inline"><em>f</em></span> which nevertheless admits an
      unique solution, and for which standard numerical schemes fail to
-     converge. Another practical work (<a href="data/PW2.pdf">.pdf</a>,
-     <a href="data/PW2_notebook.ipynb">.ipynb</a>) that deals with
+     converge. Another practical work (<a
+     href="data/teaching/PW2.pdf">.pdf</a>, <a
+     href="data/teaching/PW2_notebook.ipynb">.ipynb</a>) that deals with
      numerical integration of stochastic differential equations — with a
      somewhat long additional exercise that includes a remarkable result
      from random matrix theory and statistical physics.</p>
      <p>For the course <em>Analyse des équations aux dérivées
      partielles</em> for first year students of Ecole des Ponts, here
      are some (sketchy) <a
+<<<<<<< HEAD
      href="data/correction.pdf">corrections</a>.</p>
+=======
+     href="data/teaching/correction.pdf">corrections</a>.</p>
+     <h3 id="some-slides">Some slides</h3>
+     <ul>
+     <li>I recently gave a presentation on <a
+     href="data/pres/samm.pdf">The multimarginal optimal transport with
+     Coulomb cost</a> at the SAMM lab at Centre Pierre Mendès France
+     (Sorbonne)</li>
+     <li>I was invited at the occasion of the conference <em>On system
+     of interacting particles</em> at the IHÉS (Bures-sur-Yvette), where
+     I gave a talk on <a href="data/pres/ihes.pdf">The Riesz gases and
+     their phase diagram in dimension 1</a></li>
+     <li>For the <em>16th conference of the GDR Dynqua</em>, I was
+     invited to gave a talk on <a
+     href="data/pres/dynqua.pdf">Strictly-Correlated Electrons systems
+     and their dissociation at infinity</a></li>
+     </ul>
+     <h3 id="some-vignettes">Some vignettes</h3>
+     <h4 id="accelerating-the-gencol-algorithm">Accelerating the GenCol
+     algorithm</h4>
+     <p>I am currently working on ways to improve the <a
+     href="https://epubs.siam.org/doi/abs/10.1137/21M140732X?casa_token=Qr-IjTxIwWwAAAAA:_BSSSVOXFc_f0SKERnyCP-7bfOu68DfYgUgbTfPqTxK7HyfuFya0Yw_EZQ7f2q22Qdg5S-vTXgnZ">GenCol
+     algorithm</a>, notably by the introduction of stochastic rules in
+     order to update the sparse domain <span
+     class="math inline"><em>Ω</em></span> of the reduced OT problem. In
+     the above <em>.gif</em>, an accelerated version of the GenCol
+     algorithm is depicted. There is <span
+     class="math inline"><em>N</em> = 5</span> marginals with <span
+     class="math inline"><em>L</em> = 15</span> points of discretisation
+     for each marginal, for the Coulomb cost with (one-dimensional)
+     uniform marginal. On the left, the value of the reduced OT, and the
+     (two-point) marginal of the reduced optimal transport plan and in
+     the center and on the right, the (symmetrised) two-point
+     density.</p>
+     <p><img src="data/media/5Marginal1DCoulombUniform.gif" /></p>
+     <h4 id="phase-transition-in-the-1d-riesz-gases-for-s-in--1-0">Phase
+     transition in the 1D Riesz gases for <span
+     class="math inline"><em>s</em> ∈ (−1, 0)</span></h4>
+     <p>Here is a <em>.gif</em> that depicts the simulation of the 1D
+     Riesz gases when the Riesz exponent <span
+     class="math inline"><em>s</em></span> is within the range <span
+     class="math inline">(−1, 0)</span> – thus between the 1D Coulomb
+     gas and the Dyson log-gas. On the left, the pair correlation <span
+     class="math inline"><em>g</em>(<em>r</em>)</span> is depicted at
+     decreasing temperatures, and we can observe that at sufficiently
+     low temperature it becomes a periodic function (as in a crystal)
+     whereas at high temperature it is monotonic (as in a fluid). On the
+     right, I plot the structure factor <span
+     class="math inline"><em>S</em>(<em>k</em>)</span> (essentially the
+     Fourier transform of <span
+     class="math inline"><em>g</em>(<em>r</em>)</span>. It is coherent
+     with the behaviour seen previously on the pair correlation, as we
+     can witness the appearance of a so-called Bragg peak(s) at low
+     temperature, coherent with the formation of a crystalline
+     phase.</p>
+     <p><img src="data/media/PhaseTransition.gif" /></p>
+     <h4 id="projections-of-sde-onto-submanifolds">Projection(s) of SDE
+     onto submanifolds</h4>
+     <p>On the left, we start from the SDE <span
+     class="math inline"><em>d</em><em>X</em><sub><em>t</em></sub> = <em>b</em>(<em>X</em><sub><em>t</em></sub>) + <em>d</em><em>W</em><sub><em>t</em></sub></span>
+     where <span
+     class="math inline"><em>W</em><sub><em>t</em></sub></span> is a
+     two-dimensional standard Brownian motion and <span
+     class="math inline"><em>b</em>(<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>) = (<em>x</em><sub>2</sub>, −<em>x</em><sub>1</sub>)</span>,
+     and we build a projection of this SDE using a principle <em>à
+     la</em> Dirac–Frenkel, so that the projected SDE be such that its
+     solution verifies <span
+     class="math inline">𝔼[<em>X</em><sub><em>t</em></sub>] ∈ 𝕊</span>
+     where <span class="math inline">𝕊</span> is the unit circle. On the
+     right, we depict three trajectories for three different ways of
+     projecting an SDE as introduced in <span class="citation"
+     data-cites="lelievreProjectionStochasticDifferentialInpreparation">[<a
+     href="#ref-lelievreProjectionStochasticDifferentialInpreparation"
+     role="doc-biblioref">4</a>]</span>. In the present case, we project
+     the SDE onto the sphere, meaning that we demand that almost-surely
+     <span
+     class="math inline"><em>X</em><sub><em>t</em></sub> ∈ 𝕊<sup>2</sup></span>.
+     <img src="data/media/ProjectionSDE.gif" /></p>
+     <h3 id="some-prehistoric-works">Some prehistoric works</h3>
+     <p>Here are some prehistoric works that may be of (relatively
+     minor) interests for students.</p>
+     <ul>
+     <li>My <a href="data/docs/memoire_M2.pdf"><em>mémoire de
+     M2</em></a> on the two-dimensional <em>Uniform Electron Gas</em>
+     through the lens of (multimarginal) optimal transport. Of potential
+     interests may be the general blueprint to prove Kantorovich
+     duality, as well as a minor extension to the logarithmic cost of an
+     important result in the study of the multimarginal optimal
+     transport problem with Coulomb cost, namely that the electrons are
+     at optimality far enough from each others.</li>
+     <li>My <a href="data/docs/memoire_M1.pdf"><em>mémoire de
+     M1</em></a> where I study the spectral properties of the <span
+     class="math inline"><em>N</em></span>-body electronic Hamiltonian,
+     and where I extend a result of <a
+     href="https://msp.org/apde/2013/6-5/p07.xhtml">Lenzman &amp;
+     Lewin</a> to the molecular setting that states that when the number
+     of electrons is bigger that <span
+     class="math inline"><em>N</em> ≥ 4<em>Z</em> + 1</span> where <span
+     class="math inline"><em>Z</em></span> is the number of protons, the
+     electronic Hamiltonian has no eigenvalues (to wit, the atom is not
+     <em>stable</em>). Also, of potential interests may be a
+     comprehensive introduction to the famous <em>Mourre
+     estimates</em>.</li>
+     </ul>
+>>>>>>> 1c43877 (Changing files structure and adding animation to the website)
   </body>
 </html>
