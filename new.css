@@ -112,21 +112,22 @@ html,input,select,button {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 991px) {
- body{
-width = 100%
-font-size: 3vw;
-
-
-}
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 body {
 	max-width: 60%;
-	font-size: 1.15rem;
+	
 }
+p {
+font-size: 1.15rem;
+}
+ol,
+ul {
+	/* Replace the browser default padding */
+	padding-left: 2rem;
+}
+
 }
 
 
@@ -454,11 +455,6 @@ textarea {
 	max-width: 100%;
 }
 
-ol,
-ul {
-	/* Replace the browser default padding */
-	padding-left: 2rem;
-}
 
 li {
 	margin-top: .4rem;
@@ -493,3 +489,21 @@ input {
 img {
 	max-width: 100%;
 }
+
+@media only screen and (max-width: 991px) {
+ body{
+width = 100%
+}
+p, li, ul, ol {
+Font-size : 4vw;
+}
+
+ol,
+ul {
+	/* Replace the browser default padding */
+	padding-left: 1rem;
+}
+
+
+}
+
