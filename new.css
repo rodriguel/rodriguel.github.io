@@ -115,7 +115,9 @@ html,input,select,button {
 @media only screen and (max-width: 991px) {
  body{
 width = 100%
-font-size: 4rem;
+font-size: 1px;
+
+
 }
 }
 
@@ -123,6 +125,7 @@ font-size: 4rem;
 @media only screen and (min-width: 992px) {
 body {
 	max-width: 60%;
+	font-size: 1.15rem;
 }
 }
 
@@ -139,7 +142,6 @@ body {
 
 	/* Main body text */
 	color: var(--nc-tx-2);
-	font-size: 1.15rem;
 	line-height: 1.5;
 	text-align: justify;
 }
