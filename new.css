@@ -112,9 +112,9 @@ html,input,select,button {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
  body{
-max-width =600 px
+width = 100%
 font-size: 1.5rem;
 }
 }
