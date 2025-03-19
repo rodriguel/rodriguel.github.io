@@ -112,7 +112,27 @@ html,input,select,button {
 
 
 /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 991px) {
+	body{
+   width: 90%
+   }
+   p, li, ul, ol {
+   font-size: 1.3rem;
+   }
 
+   #refs {
+	font-size: 1.2rem;
+   }
+   
+   ol,
+   ul {
+	   /* Replace the browser default padding */
+	   padding-left: 1rem;
+   }
+   
+   
+   }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 body {
@@ -490,20 +510,5 @@ img {
 	max-width: 100%;
 }
 
-@media only screen and (max-width: 991px) {
- body{
-width = 100%
-}
-p, li, ul, ol {
-Font-size : 4vw;
-}
 
-ol,
-ul {
-	/* Replace the browser default padding */
-	padding-left: 1rem;
-}
-
-
-}
 
