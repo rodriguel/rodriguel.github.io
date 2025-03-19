@@ -161,9 +161,14 @@ body {
 	max-width: 60%;
 	
 }
-p {
-font-size: 1.15rem;
-}
+p, li, ul, ol {
+	font-size: 1.2rem;
+	}
+ 
+	#refs {
+	 font-size: 1.2rem;
+	}
+	
 ol,
 ul {
 	/* Replace the browser default padding */
