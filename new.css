@@ -115,7 +115,7 @@ html,input,select,button {
 @media only screen and (max-width: 991px) {
  body{
 width = 100%
-font-size: 1.5rem;
+font-size: 4rem;
 }
 }
 
