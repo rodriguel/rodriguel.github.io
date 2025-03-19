@@ -111,18 +111,17 @@ html,input,select,button {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-/* Extra small devices (phones, 600px and down) */
+/* For mobile devices or more generally small devices */
 @media only screen and (max-width: 991px) {
 	body{
    width: 90%
    }
    p, li, ul, ol {
-   font-size: 1.3rem;
+   font-size: 1.4rem;
    }
 
    #refs {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
    }
    
    ol,
@@ -131,6 +130,29 @@ html,input,select,button {
 	   padding-left: 1rem;
    }
    
+   h1 {
+	font-size: 2.25rem;
+	}
+
+	h2 {
+		font-size: 1.85rem;
+	}
+
+	h3 {
+		font-size: 1.55rem;
+	}
+
+	h4 {
+		font-size: 1.25rem;
+	}
+
+	h5 {
+		font-size: 1rem;
+	}
+
+	h6 {
+		font-size: .875rem;
+	}
    
    }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -146,6 +168,31 @@ ol,
 ul {
 	/* Replace the browser default padding */
 	padding-left: 2rem;
+}
+
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 1.85rem;
+}
+
+h3 {
+	font-size: 1.55rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: .875rem;
 }
 
 }
@@ -191,30 +238,6 @@ h4,
 h5,
 h6 {
 	margin-bottom: .3rem;
-}
-
-h1 {
-	font-size: 2.25rem;
-}
-
-h2 {
-	font-size: 1.85rem;
-}
-
-h3 {
-	font-size: 1.55rem;
-}
-
-h4 {
-	font-size: 1.25rem;
-}
-
-h5 {
-	font-size: 1rem;
-}
-
-h6 {
-	font-size: .875rem;
 }
 
 a {
