@@ -31,11 +31,11 @@ img[alt$="><"] {
 	--nc-bg-1: #FFFFFF;
 	--nc-bg-2: #F6F8FA;
 	--nc-bg-3: #E5E7EB;
-	--nc-lk-1: #7C00FE;
+	--nc-lk-1: #967bb6;
 	--nc-lk-2: #F9E400;
 	--nc-lk-tx: #FFFFFF;
-	--nc-ac-1: #79FFE1;
-	--nc-ac-tx: #0C4047;
+	--nc-ac-1: #967bb6;
+	--nc-ac-tx: #FFFFFF;
 
 	/* Dark theme */
 	--nc-d-tx-1: #ffffff;
@@ -114,32 +114,32 @@ html,input,select,button {
 /* For mobile devices or more generally small devices */
 @media only screen and (max-width: 991px) {
 	body{
-   width: 90%
+   width: 85%;
    }
    p, li, ul, ol {
-   font-size: 1.4rem;
+   font-size: 1rem;
    }
 
    #refs {
-	font-size: 1.4rem;
+	font-size: 1rem;
    }
    
    ol,
    ul {
 	   /* Replace the browser default padding */
-	   padding-left: 1rem;
+	   padding-left: 0.5rem;
    }
    
    h1 {
-	font-size: 2.25rem;
+	font-size: 2rem;
 	}
 
 	h2 {
-		font-size: 1.85rem;
+		font-size: 1.5rem;
 	}
 
 	h3 {
-		font-size: 1.55rem;
+		font-size: 1.2rem;
 	}
 
 	h4 {
@@ -159,16 +159,12 @@ html,input,select,button {
 @media only screen and (min-width: 992px) {
 body {
 	max-width: 60%;
+font-size: 1.15rem;
 	
 }
-p, li, ul, ol {
-	font-size: 1.2rem;
-	}
- 
-	#refs {
-	 font-size: 1.2rem;
-	}
-	
+p {
+
+}
 ol,
 ul {
 	/* Replace the browser default padding */
@@ -210,12 +206,16 @@ body {
 	border-radius: 6px;
 	overflow-x: hidden;
 	word-break: break-word;
+	-webkit-hyphens: auto;
+  	-moz-hyphens: auto;
+  	-ms-hyphens: auto;
+  	hyphens: auto;
 	overflow-wrap: break-word;
 	background: var(--nc-bg-1);
 
 	/* Main body text */
 	color: var(--nc-tx-2);
-	line-height: 1.5;
+	line-height: 1.7;
 	text-align: justify;
 }
 
