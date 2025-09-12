@@ -3,13 +3,6 @@
 
 /* Hack found in https://stackoverflow.com/questions/255170/markdown-and-image-alignment */
 
-.float-right {
-  float: right;
-  margin: 0 -20em 1em 1em;
-  max-width: 40%;
-}
-img { max-width: 100%; height: auto; }
-
 img[alt$=">"] {
   float: right;
   margin-left: 1em;
@@ -28,19 +21,17 @@ img[alt$="><"] {
   float: none!important;
 }
 
-
-
 :root {
 	--nc-font-sans:Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	--nc-font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
 
 	/* Light theme */
 	--nc-tx-1: #000000;
-	--nc-tx-2: #000;
+	--nc-tx-2: #1A1A1A;
 	--nc-bg-1: #FFFFFF;
 	--nc-bg-2: #F6F8FA;
 	--nc-bg-3: #E5E7EB;
-	--nc-lk-1: #000;
+	--nc-lk-1: #967bb6;
 	--nc-lk-2: #F9E400;
 	--nc-lk-tx: #FFFFFF;
 	--nc-ac-1: #967bb6;
@@ -167,7 +158,7 @@ html,input,select,button {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 body {
-	max-width: 750px;
+	max-width: 60%;
 font-size: 1.15rem;
 	
 }
@@ -210,7 +201,7 @@ h6 {
 
 body {
 	/* Center body in page */
-	margin: 0 20px; 
+	margin: 0 auto;
 	padding: 2rem;
 	border-radius: 6px;
 	overflow-x: hidden;
@@ -259,13 +250,12 @@ a {
 	text-decoration: none;
 }
 
-/*
 a:hover {
 	color: #FFF;
 	background-color : var(--nc-lk-1)
 	
 }
-*/
+
 abbr:hover {
 	/* Set the '?' cursor while hovering an abbreviation */
 	cursor: help;
@@ -548,44 +538,5 @@ img {
 	max-width: 100%;
 }
 
-
-a {
-  text-decoration-line: underline;
-  text-decoration-style: dashed;
-  text-decoration-thickness: 1.25px;      /* subtle */
-  text-underline-offset: 0.35em;          /* give it some breathing room */
-  text-decoration-skip-ink: auto;         /* avoid colliding with glyphs */
-
-  /* Fallback: if color-mix isn’t supported, this uses currentColor */
-  text-decoration-color: currentColor;
-}
-
-/* Soften the underline color where supported */
-@supports (text-decoration-color: color-mix(in srgb, red 50%, transparent)) {
-  a {
-    /* make the underline ~40% of the text color */
-    text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
-  }
-}
-
-/* Optional: on hover/focus, make it solid for clarity */
-a:hover,
-a:focus-visible {
-  text-decoration-style: solid;
-  text-decoration-thickness: 2.5px;
- text-underline-offset: 0.35em; 
-text-decoration-color: #945DC2;
-}
-
-/* Optional: dark mode – slightly stronger underline to remain visible */
-@media (prefers-color-scheme: dark) {
-  @supports (text-decoration-color: color-mix(in srgb, red 50%, transparent)) {
-    a { text-decoration-color: color-mix(in srgb, currentColor 55%, transparent); }
-  }
-}
-
-p {
-  line-height: 2; /* 1.6 × the font size */
-}
 
 
